@@ -1,5 +1,6 @@
 import streamlit as st
 from PIL import Image
+import time
 
 st.title('Funding trends visualizer')
 
