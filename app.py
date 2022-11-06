@@ -8,6 +8,12 @@ image_2 = Image.open('assets/vis-2.png')
 image_3 = Image.open('assets/vis-3.png')
 image_4 = Image.open('assets/vis-4.png')
 
+progress_bar = st.progress(0)
+
+for percent_complete in range(100):
+    time.sleep(0.05)
+    progress_bar.progress(percent_complete + 1)
+
 st.caption('\* The visulisation above utilizes the startups data from 2019-2021')
 
 st.header('Major Startup Sectors')
